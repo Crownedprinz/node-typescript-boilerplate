@@ -118,7 +118,8 @@
     "config": {
         "ghooks": {
             "pre-commit": "npm run lint",
-            "pre-push": "npm run nyc"
+            "pre-push": "npm run nyc",
+            "post-push": "npm run rm-files"
         }
     }
 }
